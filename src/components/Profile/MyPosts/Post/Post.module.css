@@ -1,0 +1,11 @@
+.ava {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+
+.like {
+  margin-left: 50px;
+  font-weight: 700;
+  color: rgb(104, 138, 253);
+}

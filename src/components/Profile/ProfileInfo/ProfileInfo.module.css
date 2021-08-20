@@ -1,0 +1,14 @@
+.main_photo {
+  /* border: 2px solid black; */
+  margin: 8px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+  border-radius: 4px;
+}

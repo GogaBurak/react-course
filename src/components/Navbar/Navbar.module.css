@@ -1,0 +1,38 @@
+/* nav */
+.nav {
+  grid-area: n;
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: #7daeef;
+
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.items {
+  padding-top: 8px;
+}
+
+.activeLink {
+  text-decoration: underline;
+  font-size: 21px;
+  color: #c2e2ff;
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-size: 21px;
+  color: #efc7ff;
+  transition-duration: 0.2s;
+}
+
+.navlink {
+  display: inline-grid;
+  grid-template-rows: repeat(5, 1fr);
+}

@@ -1,0 +1,15 @@
+/* header */
+.header {
+  grid-area: h; /* name of the items in grid sistems*/
+  /* background-color: #fff; */
+  border: 2px solid #7daeef;
+  /* background-color: #dedede; */
+
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.header img {
+  width: 50px;
+  padding-left: 15px;
+}

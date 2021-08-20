@@ -1,0 +1,22 @@
+.app-wrapper {
+  display: grid; /* all items like grid */
+  width: 1200px;
+  margin: 0 auto; /* center */
+
+  grid-template-areas: /*location oh items*/
+    "h h" /* h takes 2 columns*/
+    "n c"; /* n take 1 colums and c 1*/
+
+  grid-template-rows: 60px 1fr; /* number of rows (2)*/
+  grid-template-columns: 2fr 10fr; /* number of colums (2)*/
+  /* grid-gap: 10px; */ /* distance between items*/
+}
+
+.app-wrapper-content {
+  grid-area: c;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+
+  margin: 4px;
+  border-radius: 5px;
+}
