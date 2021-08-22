@@ -9,6 +9,8 @@ import Message from "./Message/Message";
 <Message />;
 
 const Dialogs = (props) => {
+  console.log('govno is ' + props.updateNewMessText)
+
   let dialogElements = props.state.dialogs.map((d) => (
     <DialogItems name={d.name} id={d.id} src={d.src} />
   ));
