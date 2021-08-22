@@ -22,13 +22,14 @@
 .activeLink {
   text-decoration: underline;
   font-size: 21px;
-  color: #c2e2ff;
+  /* color: #c2e2ff; */
+  color: #eeeeee;
 }
 
 .link:hover {
   text-decoration: underline;
   font-size: 21px;
-  color: #efc7ff;
+  color: #eeeeee;
   transition-duration: 0.2s;
 }
 

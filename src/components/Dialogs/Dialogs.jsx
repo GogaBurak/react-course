@@ -17,13 +17,16 @@ const Dialogs = (props) => {
     <Message message={m.message} src={m.src} />
   ));
 
-  let sendMessageElement = React.createRef();
+  let newMessElement = React.createRef();
 
-  let sendMessage = () => {
-    let mess = sendMessageElement.current.value;
-    alert(mess);
-    sendMessageElement.current.value = "";
-  };
+  let addMess = () => {
+    props.addMess();
+  }
+
+  let onMessChange = () => {
+    let text = newMessElement.current.value;
+    props.updateNewMessText(text);
+}
 
   return (
     <div className={s.dialogs}>
@@ -31,9 +34,16 @@ const Dialogs = (props) => {
       <div className={s.messages}>
         {messadeElements}
         <div className={s.send}>
-          <textarea ref={sendMessageElement} className={s.textarea}></textarea>
-          <button onClick={sendMessage} className={s.button}>
-            Send
+          <textarea  
+            onChange={onMessChange}
+            ref={newMessElement} 
+            className={s.textarea} 
+            value={props.newMessText} 
+          />
+          <button 
+            onClick={addMess} 
+            className={s.button}>
+              Send
           </button>
         </div>
       </div>

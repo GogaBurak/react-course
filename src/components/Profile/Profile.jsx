@@ -5,10 +5,10 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 const Profile = (props) => {
   return (
     <div className={s.profile}>
-      <img
+      {/* <img
         className={s.img}
         src="http://dgdesign.ru/uploads/posts/2016-09/1473417437_hg6.jpg"
-      ></img>
+      ></img> */}
       <ProfileInfo className={s.ProfileInfo} />
       <MyPosts
         className={s.MyPosts}
